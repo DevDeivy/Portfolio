@@ -1,0 +1,13 @@
+<div class="wrapper" #clone [formGroup]="grup">
+    <p class="command">$</p>
+    <input type="text" class="command-input" #commandInput spellcheck="false" 
+    (keydown.enter)="getCommand(commandInput.value)" 
+    formArrayName="comm">
+</div>
+<div class="expretions">
+    @if (response){
+        {{response}}
+    }@else if (responseError) {
+        {{responseError}}
+    }
+</div>

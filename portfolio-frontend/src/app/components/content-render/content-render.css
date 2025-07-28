@@ -1,0 +1,16 @@
+.wrapper{
+    display: flex;
+    gap: .2rem;
+}
+
+.command{
+    font-weight: normal;
+}
+
+.command-input{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: var(--white);
+    width: 100%;
+}

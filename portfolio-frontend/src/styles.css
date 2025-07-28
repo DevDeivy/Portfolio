@@ -1,0 +1,40 @@
+:root{
+    --black: #000;
+    --red: rgb(206, 18, 18);
+    --actions: rgba(0, 0, 0, .2);
+    --white: #fff;
+    --green: #00BF00;
+    --purple: #BF00BF;
+    --yellow: #BFA400;
+    --guide: #4D4D4D; 
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*, *:before, *:after{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-size: 16px;
+    background-color: #373636;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+button{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
