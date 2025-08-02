@@ -1,13 +1,23 @@
-<div class="wrapper" #clone [formGroup]="grup">
+<div class="wrapper" [formGroup]="grup">
+  <div *ngFor="let control of clon.controls.slice().reverse(); let i = index" class="wrapper1">
+    <ng-container [ngSwitch]="clon.length - 1 - i">
+      <div class="wrapper12">
+        <div class="dflex">
+          <p class="command">$</p>
+          <p *ngIf="(clon.length - 1 - i) === clon.length - 1 && response">{{ response }}</p>
+          <p *ngIf="(clon.length - 1 - i) === clon.length - 1 && responseError">{{ responseError }}</p>
+          <p *ngIf="(clon.length - 1 - i) === clon.length - 1 && responseError2"> {{ responseError2 }}</p>
+        </div>
+
+
+        <app-terminal-description></app-terminal-description>
+      </div>
+    </ng-container>
+  </div>
+
+  <div class="wrapper2">
     <p class="command">$</p>
-    <input type="text" class="command-input" #commandInput spellcheck="false" 
-    (keydown.enter)="getCommand(commandInput.value)" 
-    formArrayName="comm">
-</div>
-<div class="expretions">
-    @if (response){
-        {{response}}
-    }@else if (responseError) {
-        {{responseError}}
-    }
+    <input #commandInput type="text" class="command-input" spellcheck="false" 
+    (keydown.enter)="getCommand(commandInput.value); commandInput.value='';"/>
+  </div>
 </div>

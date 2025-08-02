@@ -1,0 +1,17 @@
+.terminal-instructions_direction{
+    display: flex;
+    gap: 1rem;
+    padding: .3rem 0;
+}
+
+.green{
+    color: var(--green);
+}
+
+.purple{
+    color: var(--purple);
+}
+
+.yellow{
+    color: var(--yellow);
+}

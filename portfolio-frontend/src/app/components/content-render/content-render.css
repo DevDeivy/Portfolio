@@ -1,5 +1,6 @@
 .wrapper{
     display: flex;
+    flex-direction: column;
     gap: .2rem;
 }
 
@@ -13,4 +14,24 @@
     background-color: transparent;
     color: var(--white);
     width: 100%;
+}
+
+.wrapper2{
+    display: flex;
+    gap: .5rem;
+}
+
+.wrapper1{
+    display: flex;
+    gap: .5rem;
+}
+
+.wrapper12{
+    display: flex;
+    flex-direction: column;
+}
+
+.dflex{
+    display: flex;
+    gap: .3rem;
 }
